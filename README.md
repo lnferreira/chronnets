@@ -1,6 +1,7 @@
 # Chronnets 
 ### A network-based network for spatiotemporal data analysis
-###### Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, Manoel F. Cardoso, Marcos G. Quiles, Liang Zhao, and Elbert E. N. Macau
+##### Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, 
+##### Manoel F. Cardoso, Marcos G. Quiles, Liang Zhao, and Elbert E. N. Macau
 
 <br>
 
@@ -8,11 +9,13 @@
 
 ### Code
 
-All the algorithms and experiments used in this paper were implemented using [R](https://www.r-project.org/). [Download](https://github.com/lnferreira/global_fss_analysis_forecasting/archive/master.zip) the code and open the R folder. There are 4 files:
+All the algorithms and experiments used in this paper were implemented using [R](https://www.r-project.org/). [Download](https://github.com/lnferreira/chronnets/zipball/master) the code and open the R folder. There are 2 files:
 
-* R/
-   * ```fire_season_analysis.R```
+##### R/
+   * ```chronnets.R```
       - Methods implementation
+   * ```run_examples.R```
+      - Examples of how to construct chronnets
 
 If you used this code, please cite our paper.
 
