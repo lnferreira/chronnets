@@ -4,10 +4,9 @@ Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, Manoel F. Car
 
 <br>
 
-![Climate networks](figs/fig4.jpg)
+![Climate networks](figs/fig01.png)
 
 In this page you find the code used in the paper.  
-arXiv: [arxiv.org/abs/1902.03298](https://arxiv.org/abs/1903.06667)
 
 ### Code
 
@@ -16,12 +15,6 @@ All the algorithms and experiments used in this paper were implemented using [R]
 * R/
    * ```fire_season_analysis.R```
       - Methods implementation
-   * ```run_example.R```
-      - An example of how to use the fire season detection and the forecasting methods
-   * ```data_exemple.csv```
-      - Data from figure 1 in the paper (India) used in the examples
-   * ```R.Rproj```
-      - R Studio project file
 
 If you used this code, please cite our paper.
 
