@@ -1,1 +1,5 @@
-theme: jekyll-theme-midnight
+title: Chronnets
+description: Code used in the paper "Chronnet, a network-based model for spatiotemporal data analysis"
+google_analytics: UA-18917131-1
+show_downloads: true
+theme: jekyll-theme-minimal
