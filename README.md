@@ -1,7 +1,6 @@
 # Chronnets 
 ### A network-based network for spatiotemporal data analysis
-##### Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, 
-##### Manoel F. Cardoso, Marcos G. Quiles, Liang Zhao, and Elbert E. N. Macau
+##### Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, Manoel F. Cardoso, Marcos G. Quiles, Liang Zhao, and Elbert E. N. Macau
 
 <br>
 
