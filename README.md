@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Chronnets <br>
+### A network-based network for spatiotemporal data analysis
+Leonardo N. Ferreira, Didier A. Vega-Oliveros, Liang Zhao, Manoel F. Cardoso and Elbert E. N. Macau
 
-You can use the [editor on GitHub](https://github.com/lnferreira/chronnets/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![Climate networks](figs/fig4.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this page you find the code used in the paper.  
+arXiv: [arxiv.org/abs/1902.03298](https://arxiv.org/abs/1903.06667)
 
-### Markdown
+### Code
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+All the algorithms and experiments used in this paper were implemented using [R](https://www.r-project.org/). [Download](https://github.com/lnferreira/global_fss_analysis_forecasting/archive/master.zip) the code and open the R folder. There are 4 files:
 
-```markdown
-Syntax highlighted code block
+* R/
+   * ```fire_season_analysis.R```
+      - Methods implementation
+   * ```run_example.R```
+      - An example of how to use the fire season detection and the forecasting methods
+   * ```data_exemple.csv```
+      - Data from figure 1 in the paper (India) used in the examples
+   * ```R.Rproj```
+      - R Studio project file
 
-# Header 1
-## Header 2
-### Header 3
+If you used this code, please cite our paper.
 
-- Bulleted
-- List
+### Contact
 
-1. Numbered
-2. List
+If you have questions or sugestions, send us an email:
 
-**Bold** and _Italic_ and `Code` text
+**Leonardo N. Ferreira**<br>
+[ferreira@leonardonascimento.com](mailto:ferreira@leonardonascimento.com)<br>
+[leonardoferreira.com](https://leonardoferreira.com)
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lnferreira/chronnets/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Didier A. Vega-Oliveros**<br>
+[davo@icmc.usp.br](mailto:davo@icmc.usp.br)<br>
+[didiervega.github.io](https://didiervega.github.io/)
