@@ -14,7 +14,7 @@ All the algorithms and experiments used in this paper were implemented using [R]
    * ```chronnets.R```
       - Methods implementation
    * ```run_example.R```
-      - Examples of how to construct chronnets
+      - Example of how to construct chronnets
 
 If you used this code, please cite our paper.
 
