@@ -13,6 +13,8 @@ All the algorithms and experiments used in this paper were implemented using [R]
 ##### R/
    * ```chronnets.R```
       - Methods implementation
+   * ```dataset_generator.R```
+      - Methods for artificial data set generation and plot
    * ```run_example.R```
       - Example of how to construct chronnets
 
