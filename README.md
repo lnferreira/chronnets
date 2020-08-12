@@ -27,7 +27,7 @@ All the algorithms and experiments used in this paper were implemented using [R]
 If you used this code, please cite our paper.
 
 ```
-@article{cite-key,
+@article{ferreira_et_al_2020,
 	Author = {Ferreira, Leonardo N. and Vega-Oliveros, Didier A. and Cotacallapa, Mosh{\'e} and Cardoso, Manoel F. and Quiles, Marcos G. and Zhao, Liang and Macau, Elbert E. N.},
 	Journal = {Nature Communications},
 	Number = {1},
