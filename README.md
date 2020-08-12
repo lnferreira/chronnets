@@ -1,8 +1,8 @@
 # Chronnets 
-## A network-based network for spatiotemporal data analysis
+## Spatiotemporal data analysis with chronological networks
 Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, Manoel F. Cardoso, Marcos G. Quiles, Liang Zhao, and Elbert E. N. Macau
 
-[![DOI](https://zenodo.org/badge/224406243.svg)](https://zenodo.org/badge/latestdoi/224406243)
+[![Code DOI](https://zenodo.org/badge/224406243.svg)](https://zenodo.org/badge/latestdoi/224406243)
 
 <br>
 
@@ -10,7 +10,7 @@ Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, Manoel F. Car
 
 ### Code
 
-All the algorithms and experiments used in this paper were implemented using [R](https://www.r-project.org/). [Download](https://github.com/lnferreira/chronnets/zipball/master) the code and open the R folder. There are 2 files:
+All the algorithms and experiments used in this paper were implemented using [R](https://www.r-project.org/). [Download](https://github.com/lnferreira/chronnets/zipball/master) the code and open the R folder. There are 3 files:
 
 ##### R/
    * ```chronnets.R```
@@ -20,7 +20,22 @@ All the algorithms and experiments used in this paper were implemented using [R]
    * ```run_example.R```
       - Example of how to construct chronnets
 
+
+### Bibtex
+
 If you used this code, please cite our paper.
+
+```
+@article{cite-key,
+	Author = {Ferreira, Leonardo N. and Vega-Oliveros, Didier A. and Cotacallapa, Mosh{\'e} and Cardoso, Manoel F. and Quiles, Marcos G. and Zhao, Liang and Macau, Elbert E. N.},
+	Journal = {Nature Communications},
+	Number = {1},
+	Pages = {4036},
+	Title = {Spatiotemporal data analysis with chronological networks},
+	Volume = {11},
+	Year = {2020}
+}
+```
 
 ### Contact
 
