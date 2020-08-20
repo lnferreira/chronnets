@@ -11,7 +11,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-list_packages = c("igraph", "dplyr", "plyr", "zoo")
+list_packages = c("igraph", "dplyr", "plyr", "zoo", "parallel")
 new.packages = list_packages[!(list_packages %in% installed.packages()[,"Package"])]
 if (length(new.packages)) 
     install.packages(new.packages)
