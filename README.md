@@ -1,6 +1,9 @@
 # Chronnets 
-### Spatiotemporal data analysis with chronological networks
-Leonardo N. Ferreira, Didier A. Vega-Oliveros, Moshé Cotacallapa, Manoel F. Cardoso, Marcos G. Quiles, Liang Zhao, and Elbert E. N. Macau
+
+
+### Source code used in the paper:
+
+Ferreira, L. N., Vega-Oliveros, D. A., Cotacallapa, M., Cardoso, M. F., Quiles, M. G., Zhao, L., & Macau, E. E. (2020). _Spatiotemporal data analysis with chronological networks_. **Nature Communications**, 11(1), 1-11.
 
 DOI: [doi.org/10.1038/s41467-020-17634-2](https://doi.org/10.1038/s41467-020-17634-2)
 
@@ -41,7 +44,7 @@ If you used this code, please cite our paper.
 
 ### Contact
 
-If you have questions or sugestions, send us an email:
+If you have questions or sugestions, send us a message:
 
 **Leonardo N. Ferreira**<br>
 [ferreira@leonardonascimento.com](mailto:ferreira@leonardonascimento.com)<br>
