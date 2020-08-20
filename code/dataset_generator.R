@@ -11,8 +11,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-library(ggplot2)
-library(viridis)
+list_packages = c("ggplot2", "viridis")
+new.packages = list_packages[!(list_packages %in% installed.packages()[,"Package"])]
+if (length(new.packages)) 
+    install.packages(new.packages)
+for (package in list_packages)
+    library(package, character.only = T)
 
 # =================================================================================
 # Generate spatiotemporal datasets 

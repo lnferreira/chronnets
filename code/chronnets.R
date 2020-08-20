@@ -11,14 +11,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-library(igraph)
-library(dplyr)
-library(plyr)
-library(zoo)
+list_packages = c("igraph", "dplyr", "plyr", "zoo")
+new.packages = list_packages[!(list_packages %in% installed.packages()[,"Package"])]
+if (length(new.packages)) 
+    install.packages(new.packages)
+for (package in list_packages)
+    library(package, character.only = T)
 
 # =================================================================================
 # Creates a chronnet from a temporal data set. This method accepts multiple events
-#   in the same period of time.
+#   in the same period of time. Dataset should be a data frame with two columns:
+#       cell: The id of the region where an event occured
+#       t: time
 # =================================================================================
 chronnet_create <- function(dataset, self_loops=TRUE, mode="directed",  num_cores=2) {
     time_seq = sort(unique(dataset$t))
