@@ -20,14 +20,13 @@ for (package in list_packages)
 
 # =================================================================================
 # Generate spatiotemporal datasets 
-# Return: a data frame with time (t), x and y in the grid where a event were
-#         generated and the cell ID. Please note that x and y are not the actual 
-#         position of the event, but just the row and colum where the event occured
-#         in the grid system used to represent the modeled area. The actual event
-#         position is not required for the chronnet construction. This information 
-#         it is not necessary for the experiments using the proposed data set
-#         generator. If the actual position is necessary, check the function  
-#         toy_experiment_generate_events.
+# Return: a data frame with time (t), x, and y in the grid where an event was 
+#   generated and the cell ID. Please note that x and y are not the actual 
+#   positions of the event, but just the row and column where the event occurred in 
+#   the grid system used to represent the modeled area. The actual event position 
+#   is not required for the chronnet construction. This information is not 
+#   necessary for the experiments using the proposed data set generator. If the 
+#   actual position is necessary, check the function toy_experiment_generate_events.
 # =================================================================================
 toy_experiment <- function(p_matrix, period=100, one_cell_per_time=FALSE, num_cores=1){
     temporal_grid_states = mclapply(1:period, function(t){
@@ -55,10 +54,10 @@ toy_experiment <- function(p_matrix, period=100, one_cell_per_time=FALSE, num_co
 
 # =================================================================================
 # Generate events for a specific toy experiment (function toy_experiment)
-# Return: Given an artificial data set, it returns actual (x,y) position for the 
-#         events considering that each grid cell has 10 x 10 (area). This utility
-#         function is here used just for plotting purposes. This function might
-#         also be useful to use as input for other spatiotemporal methods.
+# Return: Given an artificial data set, it returns the actual (x,y) position for  
+#         the events considering that each grid cell has 10 x 10 (area). This 
+#         utility function is here used just for plotting purposes. This function 
+#         might also be useful to use as input for other spatiotemporal methods.
 # =================================================================================
 toy_experiment_generate_events <- function(p_matrix, dataset=c(), offset=1){
     min_points = expand.grid(x_min=seq(0,90,10), y_min = rev(seq(0,90, 10)))

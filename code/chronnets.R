@@ -21,7 +21,7 @@ for (package in list_packages)
 # =================================================================================
 # Creates a chronnet from a temporal data set. This method accepts multiple events
 #   in the same period of time. Dataset should be a data frame with two columns:
-#       cell: The id of the region where an event occured
+#       cell: The id of the region where an event occurred
 #       t: time
 # =================================================================================
 chronnet_create <- function(dataset, self_loops=TRUE, mode="directed",  num_cores=2) {
