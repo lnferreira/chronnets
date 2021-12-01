@@ -18,17 +18,20 @@ if (length(new.packages))
 for (package in list_packages)
     library(package, character.only = T)
 
+NUM_CORES = 1
+
 source("chronnets.R")
 source("dataset_generator.R")
 
-cat("Chronnets\n---------------------\n")
-cat("Example of how to construct chronnets using artificial spatiotemporal data sets.\n\n")
+cat("CHRONNETS\n---------------------\n")
+cat("Example of how to construct chronnets using artificial spatiotemporal data sets.\n")
+cat("Using", NUM_CORES, "core(s)\n\n")
 devAskNewPage(ask = TRUE)
 par(ask=TRUE, mar=c(0,0,0,0))
 
 cat("1.1 Constructing a small data set (10x10) considering a power-law prability distribution...\n")
 probs = matrix(scales::rescale(rpldis(n = 10*10, xmin = 1, alpha = 2.3), to=c(0.001,0.05)),10,10)
-toy_ds = toy_experiment(p_matrix = probs, period = 500, num_cores = 1)
+toy_ds = toy_experiment(p_matrix = probs, period = 500, num_cores = NUM_CORES)
 toy_ds_events = toy_experiment_generate_events(p_matrix = probs, dataset = toy_ds)
 p = toy_experiment_plot_matrix(pnts = toy_ds_events$pnts, background = toy_ds_events$background) + 
     scale_fill_viridis(direction = -1, alpha = 0.6, option = "D")
@@ -40,7 +43,7 @@ plot(chronnet, vertex.size=3, vertex.label=NA, edge.arrow.size=0.4, edge.width=E
 
 cat("2.1 Constructing now a larger data set (100x100) also with a power-law prability distribution...\n(it might take a while)\n")
 probs = matrix(scales::rescale(rpldis(n = 100*100, xmin = 1, alpha = 2.3), to=c(0,0.02)),100,100)
-toy_ds = toy_experiment(p_matrix = probs, period = 10000, num_cores = 1)
+toy_ds = toy_experiment(p_matrix = probs, period = 10000, num_cores = NUM_CORES)
 chronnet = chronnet_create(dataset = toy_ds, self_loops = FALSE)
 plot(chronnet, vertex.size=3, vertex.label=NA, edge.arrow.size=0.4, edge.width=E(chronnet)$weight)
 
