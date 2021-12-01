@@ -40,7 +40,7 @@ plot(chronnet, vertex.size=3, vertex.label=NA, edge.arrow.size=0.4, edge.width=E
 
 cat("2.1 Constructing now a larger data set (100x100) also with a power-law prability distribution...\n(it might take a while)\n")
 probs = matrix(scales::rescale(rpldis(n = 100*100, xmin = 1, alpha = 2.3), to=c(0,0.02)),100,100)
-toy_ds = toy_experiment(p_matrix = probs, period = 10000, num_cores = 2)
+toy_ds = toy_experiment(p_matrix = probs, period = 10000, num_cores = 1)
 chronnet = chronnet_create(dataset = toy_ds, self_loops = FALSE)
 plot(chronnet, vertex.size=3, vertex.label=NA, edge.arrow.size=0.4, edge.width=E(chronnet)$weight)
 
