@@ -28,7 +28,7 @@ par(ask=TRUE, mar=c(0,0,0,0))
 
 cat("1.1 Constructing a small data set (10x10) considering a power-law prability distribution...\n")
 probs = matrix(scales::rescale(rpldis(n = 10*10, xmin = 1, alpha = 2.3), to=c(0.001,0.05)),10,10)
-toy_ds = toy_experiment(p_matrix = probs, period = 500, num_cores = 2)
+toy_ds = toy_experiment(p_matrix = probs, period = 500, num_cores = 1)
 toy_ds_events = toy_experiment_generate_events(p_matrix = probs, dataset = toy_ds)
 p = toy_experiment_plot_matrix(pnts = toy_ds_events$pnts, background = toy_ds_events$background) + 
     scale_fill_viridis(direction = -1, alpha = 0.6, option = "D")
